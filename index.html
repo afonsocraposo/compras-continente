@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset=utf-8>
+  <title>Compras Continente</title>
+  <link rel="stylesheet" href="style.css"></style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+</head>
+<body>
+    Lista de compras (<a href="https://www.continente.pt/conta/encomendas/">encomenda</a>):
+    <br>
+    <textarea id="compras-raw" name="compras-raw" rows="10" cols="100" placeholder="Cola aqui os valores copiados do Continente">Banana, Maçã e Pera
+Banana
+Continente
+5 un
+€1,29
+-
+-
+Batata, Batata Doce e Mandioca
+Batata Especial Assar
+Continente Seleção
+1 un
+€1,79
+-
+-
+Café em Cápsulas
+Cápsulas de Café Suavis Int 6
+Continente
+3 un
+€5,67
+-
+-
+Fatiado e Bolas
+Queijo Flamengo Fatiado
+Continente
+1 un
+€4,19
+-
+-
+Fiambre de Aves
+Fiambre Peito de Frango
+Continente
+2 un
+€3,38
+-
+-
+Hambúrgueres
+Hambúrguer de Proteína Vegetal Vegan
+Garden Gourmet
+1 un
+€2,99
+€2,00
+-
+Iogurtes Aromas e Naturais
+Iogurte Grego Mythos Ligeiro Natural
+Continente Equilíbrio
+1 un
+€2,39
+-
+-
+Legumes Congelados
+Brócolos
+Continente
+1 un
+€1,99
+-
+-
+Espinafres em Folha
+Continente
+1 un
+€1,20
+-
+-
+Mel
+Mel Flores
+Continente
+1 un
+€3,49
+-
+-
+Papas Infantis
+Nestum Mel +3A
+Nestum
+1 un
+€3,24
+€1,40
+-
+Pastas de Dentes
+Pasta de Dentes Tripla Ação
+Colgate
+1 un
+€2,85
+€1,54
+-
+Pizzas
+Pizza Mozzarella
+Continente Fácil & Bom
+2 un
+€4,38
+-
+-
+Pão de Forma e Embalado
+Pão de Forma sem Côdea
+Continente
+1 un
+€1,39
+-
+-
+Pão do Dia e Broa
+Pão Alentejano
+Continente
+2 un
+€2,50
+-
+-
+Pão de Rio Maior
+Continente
+2 un
+€2,38
+-
+-
+Refeições Fáceis
+Coxinhas Vegan
+Continente Fácil & Bom
+2 un
+€4,22
+€0,76
+-
+Refeições Vegetarianas
+Panado Vegan de Proteína Vegetal
+Nestlé Garden Gourmet
+1 un
+€3,99
+€1,00
+-
+Salsichas de Proteína Vegetal
+Iglo Green Cuisine
+1 un
+€2,99
+€1,00
+-</textarea>
+    <br>
+    <br>
+    Sacos:
+    <input type="number" placeholder="€" min="0" max="999.99" id="valor-sacos" value="0.50"/>
+    <br>
+    <br>
+    Pago por:
+    <select id="pago-por" name="pago-por">
+        <option value="A">A</option>
+        <option value="G">G</option>
+        <option value="L">L</option>
+    </select>
+    Valor:
+    <input type="number" placeholder="€" min="0" max="999.99" id="valor-pago" value="47.03"/>
+    <button onclick="parse()">
+        Atualizar
+    </button>
+    <br>
+    <br>
+    <div id="tabela">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

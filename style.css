@@ -1,0 +1,32 @@
+#tabela {
+    text-align: center;
+}
+
+input {
+    text-align: right;
+}
+
+.price {
+    text-align: right;
+}
+
+.name {
+    width: 20em;
+    text-align: left;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+td {
+    padding: 5px;
+}
+
+input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  background-color: #eee;
+}
